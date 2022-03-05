@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="stylesheet" href="estilos.css"> 
+    <title>Mi pedido</title>
+</head>
+
+<header>
+    <img src="https://www.floresya.mx/wp-content/uploads/2022/02/2-2.png" alt="Pasteleria Tia Claudia" width= "30%" >
+
+    <h1>Crea tu mismo tu pastel favorito.</h1>
+
+    <nav>
+    
+        <div class="topnav">
+            <a href="./Menu Pasteleria.html">Inicio</a>
+            <a href="./pedido.html">Hacer Pedido</a>
+            <a href="./Pasteleros.html">Pasteleros</a>
+          </div>
+        
+        </nav>
+
+
+</header>
+
+<body>
+
+<section>
+   
+     <div class="columns">
+        <form action="pedido.js">
+<h3>Contacto</h3>
+    <label for="Nombre1"> Nombre</label>
+    <br> <input type="text"  id="Nombre1" name="Nombre1"> <br><br>
+    <label for="Apellido1"> Apellido</label>
+    <br> <input type="text"  id="Apellido1" name="Apellido1"><br><br>
+    <label for="correo1">Correo</label><br>
+    <input type="email" placeholder="@" id="correo1" name="correo1"><br><br>
+    <label for="numero1">Celular</label><br>
+    <input type="number" placeholder="#" id="numero1" name="numero1"><br><br>
+<hr>
+
+<h3>Pedido</h3>
+    <label for="tipopastel">Elige tu pastel Favorito</label><br>
+    <input list="tipopastel">
+    <datalist id="tipopastel">
+        <option value="Pastel de Queso: $270 pesos">     </option>
+        <option value="Pay de Platano: $395 pesos">      </option>
+        <option value="Pastel de Zanahoria: $365 pesos"> </option>
+        <option value="Pastel de Fresas: $210 pesos">    </option>
+        <option value="Pastel de CarlosV: $300 pesos">   </option>
+        <option value="Pastel de Cajeta: $250 pesos">    </option>
+    </datalist>
+
+    <br><br>
+
+    <label for="tiposabor">Elige tus sabores</label><br>
+    <input type="checkbox" id="Fresa" name="Fresa" value="Fresa">
+    <label for="Fresa">Fresa: $20 pesos</label><br>
+    <input type="checkbox" id="Chocolate" name="Chocolate" value="Chocolate">
+    <label for="Chocolate">Chocolate: $35 pesos</label><br>
+    <input type="checkbox" id="Cajeta" name="Cajeta" value="Cajeta">
+    <label for="Cajeta">Cajeta: $35 pesos</label><br>
+    <input type="checkbox" id="Vainilla" name="Vainilla" value="Vainilla">
+    <label for="Vainilla">Vainilla: $20 pesos</label><br>
+    <input type="checkbox" id="Queso" name="Queso" value="Queso">
+    <label for="Queso">Queso: $30 pesos</label><br>
+    <input type="checkbox" id="Frambuesa" name="Frambuesa" value="Frambuesa">
+    <label for="Frambuesa">Frambuesa: $25 pesos</label><br><br>
+
+    <label for="tipoadorno">Elige tu adorno extra</label><br>
+         <input type="checkbox" id="Punto" name="Punto" value="Punto">
+         <label for="Punto">Punto: $20 pesos</label><br>
+         <input type="checkbox" id="estrella" name="estrella" value="estrella">
+         <label for="Estrella">Estrella: $35 pesos</label><br>
+         <input type="checkbox" id="hoja" name="hoja" value="hoja">
+         <label for="hoja">Hoja: $35 pesos</label><br>
+         <input type="checkbox" id="olan" name="olan" value="olan">
+         <label for="olan">Olan: $20 pesos</label><br>
+         <input type="checkbox" id="flores" name="flores" value="flores">
+         <label for="flores">de Flores: $30 pesos</label><br>
+         <input type="checkbox" id="canasta" name="canasta" value="canasta">
+         <label for="canasta">de Canasta: $25 pesos</label><br><br>
+
+    <label for="Notas">Notas del Pedido</label><br>
+        <textarea name="notas" id="notas" cols="30" rows="4"></textarea>
+        <input type="reset">
+        <input type="submit">
+
+            <br><br>
+        </form>
+    </div>
+
+</section>
+
+    <footer>
+        <p>Dirección: California #3423 Ciudad de México Celular: 55-12345643 Horarios: Lunes a Viernes de 9am a 6pm</p>
+        <br>
+        <p>Derechos Reservados 2022</p>
+    </footer>
+
+</body>
+
+</html>
